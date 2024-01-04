@@ -11,6 +11,6 @@ def download_data(ticker:str) -> pd.DataFrame:
         pd.DataFrame: A dataframe retrivied from Yahoo Finance.
     """
 
-    data = yf.download('ticker')
+    data = yf.download(ticker)
 
     return data
